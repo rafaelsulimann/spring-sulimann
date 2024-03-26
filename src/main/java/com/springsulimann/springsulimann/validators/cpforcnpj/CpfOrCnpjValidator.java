@@ -1,11 +1,11 @@
 package com.springsulimann.springsulimann.validators.cpforcnpj;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-
 import org.hibernate.validator.internal.constraintvalidators.hv.br.CNPJValidator;
 import org.hibernate.validator.internal.constraintvalidators.hv.br.CPFValidator;
 import org.springframework.util.Assert;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class CpfOrCnpjValidator implements ConstraintValidator<CpfOrCnpj, String>{
 
@@ -28,4 +28,3 @@ public class CpfOrCnpjValidator implements ConstraintValidator<CpfOrCnpj, String
     }
 
 }
-

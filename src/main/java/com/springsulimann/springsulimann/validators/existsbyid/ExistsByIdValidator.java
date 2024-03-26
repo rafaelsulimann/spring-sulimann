@@ -1,13 +1,12 @@
 package com.springsulimann.springsulimann.validators.existsbyid;
 
-import java.util.List;
 import java.util.Objects;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
+import jakarta.persistence.Query;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class ExistsByIdValidator implements ConstraintValidator<ExistsById, Object>{
 
@@ -34,4 +33,3 @@ public class ExistsByIdValidator implements ConstraintValidator<ExistsById, Obje
     }
 
 }
-

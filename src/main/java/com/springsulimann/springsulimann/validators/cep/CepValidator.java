@@ -1,13 +1,11 @@
 package com.springsulimann.springsulimann.validators.cep;
 
-import java.util.regex.Pattern;
-
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-
 import org.springframework.util.StringUtils;
 
 import com.springsulimann.springsulimann.utils.Regex;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class CepValidator implements ConstraintValidator<Cep, String>{
 

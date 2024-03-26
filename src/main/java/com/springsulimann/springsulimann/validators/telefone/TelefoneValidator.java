@@ -1,11 +1,11 @@
 package com.springsulimann.springsulimann.validators.telefone;
 
-import java.util.regex.Pattern;
-
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import org.springframework.util.StringUtils;
 
 import com.springsulimann.springsulimann.utils.Regex;
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 public class TelefoneValidator implements ConstraintValidator<Telefone, String>{
 
