@@ -36,7 +36,7 @@ public class IncluirUsuarioRequest implements Serializable{
   private String tipo;
 
   public Usuario toModel() {
-    return new Usuario(nome, email, telefone, documento, TipoUsuario.valueOf(tipo.toUpperCase()));
+    return new Usuario(this.nome, this.email, this.telefone, this.documento, TipoUsuario.valueOf(this.tipo.toUpperCase()));
   }
 
 }

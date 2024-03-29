@@ -41,6 +41,9 @@ public class Usuario {
   @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd'T'HH:mm:ss'Z'")
   private LocalDateTime dataCriacao;
 
+  public Usuario(){
+  }
+
   public Usuario(String nome, String email, Long telefone, String documento, TipoUsuario tipo) {
     this.nome = nome;
     this.email = email;
